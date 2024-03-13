@@ -4,11 +4,12 @@ import { ContainerPage, Crew, Destination, Home, Technology } from '../../view'
 
 export const router = createBrowserRouter([
     {
+        path: "/",
         element: <ContainerPage />,
         errorElement: <ErrorPage />,
         children: [
             {
-                path: '/',
+                path: '',
                 element: <Home />,
             },
             {
